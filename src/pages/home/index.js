@@ -41,11 +41,11 @@ export const Home = () => {
 
   likeButtonArray.forEach((button) => {
     button.addEventListener('click', (e) => {
-      executeLike(e);
+      sendLike(e);
     });
   });
 
-  const executeLike = (e) => {
+  const sendLike = (e) => {
     likedPost()
     .then((retorno) => {
       console.log(retorno);
@@ -72,11 +72,11 @@ export const Home = () => {
     const buttonEnviarComment = cardPost.querySelector('.enviar-comentario');
 
     buttonEnviarComment.addEventListener('click', () => {
-      executeComment(cardPost);
+      sendComment(cardPost);
     });
   }
 
-  const executeComment = (cardPost) => {
+  const sendComment = (cardPost) => {
     const textareaComment = cardPost.querySelector('.comentar-text');
     const holderCommentBlock = cardPost.querySelector('.on-comment');
   
