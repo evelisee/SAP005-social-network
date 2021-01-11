@@ -7,6 +7,14 @@
     margin-bottom: 20px;
 }
 
+.on-comment{
+    display:none;
+}
+
+.on-comment.display{
+    display: block;
+}
+
 .like.liked {
     background: red;
 }
